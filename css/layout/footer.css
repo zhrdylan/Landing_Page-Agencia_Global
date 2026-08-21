@@ -1,0 +1,103 @@
+/* ==========================================
+   LAYOUT: FOOTER
+   ========================================== */
+
+footer[role="contentinfo"] {
+  background: var(--color-inverse-surface);
+  color: var(--color-inverse-on-surface);
+  padding: 48px 0 24px 0;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.footer-brand-title {
+  color: var(--color-inverse-on-surface);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-inverse-on-surface);
+  margin-bottom: 24px;
+}
+
+.footer-col p {
+  font-size: 15px;
+  color: var(--color-outline-variant);
+  margin-bottom: 24px;
+  line-height: 1.7;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a {
+  font-size: 15px;
+  color: var(--color-outline-variant);
+}
+
+.footer-links a:hover {
+  color: var(--color-secondary-container);
+  padding-left: 6px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-social-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid var(--color-outline-variant);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-inverse-on-surface);
+  transition: var(--transition-smooth);
+}
+
+.footer-social-btn:hover {
+  background: var(--color-secondary-container);
+  color: var(--color-on-secondary-container);
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  padding-top: 32px;
+  border-top: 1px solid var(--color-outline-variant);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--color-outline-variant);
+}
+
+@media (min-width: 768px) {
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}

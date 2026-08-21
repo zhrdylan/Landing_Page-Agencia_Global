@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Aventura Global | Agencia de Viajes – Destinos Únicos en el Mundo</title>
+  <meta name="description" content="Aventura Global es tu agencia de viajes de confianza. Descubre paquetes a Machu Picchu, Cataratas del Iguazú, Cenotes de México y más. Reserva tu aventura hoy.">
+  <meta name="keywords" content="agencia de viajes, paquetes turísticos, Machu Picchu, Cataratas del Iguazú, Cenote Ik Kil, Valle de Cocora, Isla Múcura, aventura, turismo">
+  <meta name="author" content="Dylan">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="es">
+  <meta name="revisit-after" content="7 days">
+  <meta name="theme-color" content="#003f87">
+  <link rel="canonical" href="https://www.aventuraglobal.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.aventuraglobal.com/">
+  <meta property="og:title" content="Aventura Global | Tu próxima gran aventura comienza aquí">
+  <meta property="og:description" content="Descubre destinos exóticos, vive experiencias únicas y crea recuerdos que durarán toda la vida. Paquetes a América Latina, Europa y Asia.">
+  <meta property="og:image" content="https://www.aventuraglobal.com/img/sitios/Peru/Machu_Picchu.jpg">
+  <meta property="og:site_name" content="Aventura Global">
+  <meta property="og:locale" content="es_CO">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/logo/screen.png">
+  <link rel="apple-touch-icon" href="img/logo/screen.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- amCharts 5 Scripts -->
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+  <!-- Preload Critical Hero Image -->
+  <link rel="preload" as="image" href="img/sitios/Peru/Machu_Picchu.jpg">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-logo">Aventura Global</div>
+    <div class="preloader-spinner"></div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header>
+    <nav role="navigation" aria-label="Navegación principal">
+      <a href="#inicio" class="nav-brand">
+        <img src="img/logo/screen.png" alt="Logotipo de Aventura Global" width="40" height="40">
+        <span>Aventura Global</span>
+      </a>
+      
+      <ul class="nav-menu">
+        <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+        <li><a href="#destinos" class="nav-link">Destinos</a></li>
+        <li><a href="#paquetes" class="nav-link">Paquetes</a></li>
+        <li><a href="#galeria" class="nav-link">Galería</a></li>
+        <li><a href="#resenas" class="nav-link">Reseñas</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+
+      <button class="hamburger" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu Dropdown -->
+    <div class="mobile-menu">
+      <a href="#inicio" class="nav-link">Inicio</a>
+      <a href="#destinos" class="nav-link">Destinos</a>
+      <a href="#paquetes" class="nav-link">Paquetes</a>
+      <a href="#galeria" class="nav-link">Galería</a>
+      <a href="#resenas" class="nav-link">Reseñas</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main role="main">
+
+    <!-- Section 1: Hero Carousel (#inicio) -->
+    <section id="inicio" class="hero">
+      <div class="carousel-track">
+        <!-- Slide 1 -->
+        <article class="carousel-slide">
+          <img src="img/sitios/Peru/Machu_Picchu.jpg" alt="Vista panorámica de Machu Picchu, Perú – Aventura Global">
+          <div class="hero-content">
+            <span class="hero-badge">⭐ Destino Destacado</span>
+            <h1>Maravillas de Perú</h1>
+            <p>Explora la mística ciudadela Inca de Machu Picchu y sumérgete en la historia milenaria de los Andes.</p>
+            <div class="hero-actions">
+              <a href="#destinos" class="btn-primary">Explorar Destinos <span>→</span></a>
+              <a href="#paquetes" class="btn-outline">Ver Paquetes</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 2 -->
+        <article class="carousel-slide">
+          <img src="img/sitios/Argentina/Cataratas del Iguazú.webp" alt="Majestuosas Cataratas del Iguazú – Aventura Global">
+          <div class="hero-content">
+            <span class="hero-badge">🌊 El Poder de la Naturaleza</span>
+            <h1>Cataratas del Iguazú</h1>
+            <p>Siente la imponente fuerza y la belleza inigualable de una de las maravillas naturales del mundo.</p>
+            <div class="hero-actions">
+              <a href="#destinos" class="btn-primary">Explorar Destinos <span>→</span></a>
+              <a href="#paquetes" class="btn-outline">Ver Paquetes</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 3 -->
+        <article class="carousel-slide">
+          <img src="img/sitios/Mexico/Cenote Ik Kil/Cenote Ik Kil.png" alt="Cristalinas aguas del Cenote Ik Kil, México – Aventura Global">
+          <div class="hero-content">
+            <span class="hero-badge">💎 Misterios del Mundo Maya</span>
+            <h1>Cenotes Sagrados</h1>
+            <p>Nada en aguas subterráneas cristalinas rodeadas de vegetación exuberante y misticismo ancestral.</p>
+            <div class="hero-actions">
+              <a href="#destinos" class="btn-primary">Explorar Destinos <span>→</span></a>
+              <a href="#paquetes" class="btn-outline">Ver Paquetes</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 4 -->
+        <article class="carousel-slide">
+          <img src="img/sitios/Colombia/Valle de Cocora/Valle de Cocora.jpg" alt="Imponente Valle de Cocora en Colombia – Aventura Global">
+          <div class="hero-content">
+            <span class="hero-badge">🌿 Colombia te Enamora</span>
+            <h1>Valle de Cocora</h1>
+            <p>Descubre el hogar de la palma de cera más alta del mundo en un paisaje andino de ensueño.</p>
+            <div class="hero-actions">
+              <a href="#destinos" class="btn-primary">Explorar Destinos <span>→</span></a>
+              <a href="#paquetes" class="btn-outline">Ver Paquetes</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 5 -->
+        <article class="carousel-slide">
+          <img src="img/sitios/Tailandia/Santuario de la verdad.png" alt="Santuario de la Verdad en Tailandia – Aventura Global">
+          <div class="hero-content">
+            <span class="hero-badge">🏛️ Asia Ancestral</span>
+            <h1>Santuario de la Verdad</h1>
+            <p>Maravíllate con la arquitectura monumental de madera tallada a mano en la costa de Tailandia.</p>
+            <div class="hero-actions">
+              <a href="#destinos" class="btn-primary">Explorar Destinos <span>→</span></a>
+              <a href="#paquetes" class="btn-outline">Ver Paquetes</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <button class="carousel-btn carousel-prev" aria-label="Slide anterior">&#10094;</button>
+      <button class="carousel-btn carousel-next" aria-label="Slide siguiente">&#10095;</button>
+
+      <div class="carousel-dots"></div>
+      <div class="carousel-progress"></div>
+    </section>
+
+    <!-- Section 2: Destinos (#destinos) -->
+    <section id="destinos" class="destinos" data-animate>
+      <div class="container">
+        <header class="section-header">
+          <span class="section-subtitle">Descubre el mundo</span>
+          <h2 class="section-title">Nuestros 10 Destinos Principales</h2>
+          <p class="section-description">Haz clic en cualquier destino para explorar sus múltiples fotografías y resumen detallado.</p>
+        </header>
+
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">Todos (12)</button>
+          <button class="filter-btn" data-filter="Playa">🌊 Playa</button>
+          <button class="filter-btn" data-filter="Montaña">🏔️ Montaña</button>
+          <button class="filter-btn" data-filter="Cultura">🎭 Cultura</button>
+          <button class="filter-btn" data-filter="Historia">🏛️ Historia</button>
+          <button class="filter-btn" data-filter="Naturaleza">💎 Naturaleza</button>
+        </div>
+
+        <div class="destinations-grid">
+          <article class="destination-card" data-id="isla_mucura" data-category="Playa" data-animate data-delay="1">
+            <figure>
+              <img src="img/sitios/Colombia/Isla_Múcura/Isla Múcura.webp" alt="Isla Múcura, Colombia" loading="lazy" width="400" height="240">
+              <span class="tag">🌊 Playa</span>
+              <figcaption class="card-country">Colombia</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>Isla Múcura</h3>
+              <p>Un paraíso de aguas turquesas y arena blanca en medio del archipiélago de San Bernardo.</p>
+              <footer class="card-meta">
+                <span>⏱ Desde 4 días</span>
+                <span class="btn-link">Ver galería (5 fotos) →</span>
+              </footer>
+            </div>
+          </article>
+
+          <article class="destination-card" data-id="nevados" data-category="Montaña" data-animate data-delay="2">
+            <figure>
+              <img src="img/sitios/Colombia/Parque-de-los-Nevados/Parque-de-los-Nevados.webp" alt="Parque de los Nevados, Colombia" loading="lazy" width="400" height="240">
+              <span class="tag">🏔️ Montaña</span>
+              <figcaption class="card-country">Colombia</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>Parque de los Nevados</h3>
+              <p>Majestuosos paisajes volcánicos, frailejones y cumbres nevadas en la cordillera de los Andes.</p>
+              <footer class="card-meta">
+                <span>⏱ Desde 3 días</span>
+                <span class="btn-link">Ver galería (3 fotos) →</span>
+              </footer>
+            </div>
+          </article>
+
+          <article class="destination-card" data-id="salvador" data-category="Cultura" data-animate data-delay="3">
+            <figure>
+              <img src="img/sitios/Brasil/Pelourinho y Playas de Salvador de Bahía.jfif" alt="Salvador de Bahía, Brasil" loading="lazy" width="400" height="240">
+              <span class="tag">🎭 Cultura</span>
+              <figcaption class="card-country">Brasil</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>Salvador de Bahía</h3>
+              <p>Coloridas calles coloniales, ritmo afrobrasileño y playas paradisíacas en el nordeste brasileño.</p>
+              <footer class="card-meta">
+                <span>⏱ Desde 5 días</span>
+                <span class="btn-link">Ver galería (5 fotos) →</span>
+              </footer>
+            </div>
+          </article>
+
+          <article class="destination-card" data-id="diocleciano" data-category="Historia" data-animate data-delay="4">
+            <figure>
+              <img src="img/sitios/Crocia/Palacio de Diocleciano.jpg" alt="Palacio de Diocleciano, Croacia" loading="lazy" width="400" height="240">
+              <span class="tag">🏛️ Historia</span>
+              <figcaption class="card-country">Croacia</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>Palacio de Diocleciano</h3>
+              <p>Antigua fortaleza romana en Split convertida en el corazón vibrante de la ciudad croata.</p>
+              <footer class="card-meta">
+                <span>⏱ Desde 6 días</span>
+                <span class="btn-link">Ver galería (5 fotos) →</span>
+              </footer>
+            </div>
+          </article>
+
+          <article class="destination-card" data-id="ostia" data-category="Historia" data-animate data-delay="5">
+            <figure>
+              <img src="img/sitios/Italia/Sitio Arqueológico de Ostia Antica.jpg" alt="Ostia Antica, Italia" loading="lazy" width="400" height="240">
+              <span class="tag">🏺 Arqueología</span>
+              <figcaption class="card-country">Italia</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>Ostia Antica</h3>
+              <p>Impresionante ciudad portuaria de la antigua Roma excepcionalmente bien conservada.</p>
+              <footer class="card-meta">
+                <span>⏱ Desde 4 días</span>
+                <span class="btn-link">Ver galería (4 fotos) →</span>
+              </footer>
+            </div>
+          </article>
+
+          <article class="destination-card" data-id="cenote" data-category="Naturaleza" data-animate data-delay="6">
+            <figure>
+              <img src="img/sitios/Mexico/Cenote Ik Kil/Cenote Ik Kil.png" alt="Cenote Ik Kil, México" loading="lazy" width="400" height="240">
+              <span class="tag">💎 Naturaleza</span>
+              <figcaption class="card-country">México</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>Cenote Ik Kil</h3>
+              <p>Un cenote abierto de aguas cristalinas rodeado de lianas y naturaleza mística en Yucatán.</p>
+              <footer class="card-meta">
+                <span>⏱ Desde 5 días</span>
+                <span class="btn-link">Ver galería (5 fotos) →</span>
+              </footer>
+            </div>
+          </article>
+
+          <article class="destination-card" data-id="machu_picchu" data-category="Historia" data-animate data-delay="1">
+            <figure>
+              <img src="img/sitios/Peru/Machu_Picchu.jpg" alt="Machu Picchu, Perú" loading="lazy" width="400" height="240">
+              <span class="tag">🏔️ Montaña</span>
+              <figcaption class="card-country">Perú</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>Machu Picchu</h3>
+              <p>La majestuosa ciudadela Inca encumbrada en los Andes peruanos con vistas impresionantes.</p>
+              <footer class="card-meta">
+                <span>⏱ Desde 8 días</span>
+                <span class="btn-link">Ver galería (5 fotos) →</span>
+              </footer>
+            </div>
+          </article>
+
+          <article class="destination-card" data-id="iguazu" data-category="Naturaleza" data-animate data-delay="2">
+            <figure>
+              <img src="img/sitios/Argentina/Cataratas del Iguazú.webp" alt="Cataratas del Iguazú" loading="lazy" width="400" height="240">
+              <span class="tag">🌊 Naturaleza</span>
+              <figcaption class="card-country">Argentina / Brasil</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>Cataratas del Iguazú</h3>
+              <p>Un sistema de cataratas descomunal rodeado de selva subtropical y biodiversidad única.</p>
+              <footer class="card-meta">
+                <span>⏱ Desde 6 días</span>
+                <span class="btn-link">Ver galería (5 fotos) →</span>
+              </footer>
+            </div>
+          </article>
+
+          <article class="destination-card" data-id="valle_cocora" data-category="Naturaleza" data-animate data-delay="3">
+            <figure>
+              <img src="img/sitios/Colombia/Valle de Cocora/Valle de Cocora.jpg" alt="Valle de Cocora, Colombia" loading="lazy" width="400" height="240">
+              <span class="tag">🌿 Naturaleza</span>
+              <figcaption class="card-country">Colombia</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>Valle de Cocora</h3>
+              <p>El hogar de las palmas de cera más altas del mundo en el Eje Cafetero colombiano.</p>
+              <footer class="card-meta">
+                <span>⏱ Desde 4 días</span>
+                <span class="btn-link">Ver galería (3 fotos) →</span>
+              </footer>
+            </div>
+          </article>
+
+          <article class="destination-card" data-id="santuario" data-category="Cultura" data-animate data-delay="4">
+            <figure>
+              <img src="img/sitios/Tailandia/Santuario de la verdad.png" alt="Santuario de la Verdad, Tailandia" loading="lazy" width="400" height="240">
+              <span class="tag">🏛️ Cultura</span>
+              <figcaption class="card-country">Tailandia</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>Santuario de la Verdad</h3>
+              <p>Impresionante estructura arquitectónica de madera tallada a mano frente al mar de Pattaya.</p>
+              <footer class="card-meta">
+                <span>⏱ Desde 7 días</span>
+                <span class="btn-link">Ver galería (5 fotos) →</span>
+              </footer>
+            </div>
+          </article>
+
+          <article class="destination-card" data-id="cancun" data-category="Playa" data-animate data-delay="5">
+            <figure>
+              <img src="img/sitios/Mexico/Cancun/Cancun.png" alt="Cancún y Riviera Maya, México" loading="lazy" width="400" height="240">
+              <span class="tag">🌊 Playa</span>
+              <figcaption class="card-country">México</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>Cancún y Riviera Maya</h3>
+              <p>Playas de arena blanca, mar turquesa Caribeño y una vibrante vida nocturna.</p>
+              <footer class="card-meta">
+                <span>⏱ Desde 5 días</span>
+                <span class="btn-link">Ver galería (4 fotos) →</span>
+              </footer>
+            </div>
+          </article>
+
+          <article class="destination-card" data-id="alpes_suizos" data-category="Montaña" data-animate data-delay="6">
+            <figure>
+              <img src="img/sitios/Suiza/Alpes_Suizos.png" alt="Alpes Suizos, Suiza" loading="lazy" width="400" height="240">
+              <span class="tag">🏔️ Montaña</span>
+              <figcaption class="card-country">Suiza</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>Alpes Suizos</h3>
+              <p>Majestuosas cumbres nevadas, lagos alpinos cristalinos y pueblos de postal.</p>
+              <footer class="card-meta">
+                <span>⏱ Desde 6 días</span>
+                <span class="btn-link">Ver galería (3 fotos) →</span>
+              </footer>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Paquetes Turísticos (#paquetes) -->
+    <section id="paquetes" class="paquetes" data-animate>
+      <div class="container">
+        <header class="section-header">
+          <span class="section-subtitle">Todo incluido & Personalizable</span>
+          <h2 class="section-title">Paquetes de Viaje Exclusivos</h2>
+          <p class="section-description">Elige tu paquete, selecciona el número de noches deseado y personaliza tu aventura con cálculo dinámico en tiempo real.</p>
+        </header>
+
+        <div class="packages-grid">
+          <article class="package-card" data-animate data-delay="1">
+            <div class="package-img-wrapper">
+              <img src="img/sitios/Peru/Machu_Picchu.jpg" alt="Paquete Maravillas de Perú" loading="lazy" width="400" height="260">
+              <span class="package-badge">🏆 Más Vendido</span>
+              <div class="package-price" id="price-peru">$1,250 USD</div>
+            </div>
+            <div class="package-body">
+              <h3>Maravillas de Perú</h3>
+              <p class="package-duration">⏱ <span id="days-display-peru">8</span> días / <span id="nights-display-peru">7</span> noches</p>
+              <div class="package-nights-control" style="margin: 12px 0; display: flex; align-items: center; gap: 10px;">
+                <label for="select-nights-peru" style="font-size: 14px; font-weight: 600;">Noches:</label>
+                <select id="select-nights-peru" class="nights-select" data-package="Maravillas de Perú" data-base-price="1250" data-base-nights="7" style="padding: 6px 12px; border-radius: 8px; border: 1px solid var(--color-outline-variant); background: var(--color-surface); color: var(--color-on-surface); font-size: 14px; cursor: pointer;">
+                  <option value="3">3 noches</option>
+                  <option value="5">5 noches</option>
+                  <option value="7" selected>7 noches (Estándar)</option>
+                  <option value="10">10 noches</option>
+                </select>
+              </div>
+              <p>Recorre la ciudadela Inca de Machu Picchu, explora Cusco y el Valle Sagrado, navega el Lago Titicaca y descubre la gastronomía peruana.</p>
+              <ul class="package-includes">
+                <li>✈ Vuelos domésticos e internos</li>
+                <li>🏨 Hoteles 4★ con desayuno incluido</li>
+                <li>🗺 Guía certificado y entradas prioritarias</li>
+              </ul>
+              <a href="#contacto" class="btn-cta select-package-btn" data-pkg-name="Maravillas de Perú">Reservar Paquete</a>
+            </div>
+          </article>
+
+          <article class="package-card" data-animate data-delay="2">
+            <div class="package-img-wrapper">
+              <img src="img/sitios/Argentina/Cataratas del Iguazú.webp" alt="Paquete Cataratas del Iguazú" loading="lazy" width="400" height="260">
+              <span class="package-badge">🔥 Oferta</span>
+              <div class="package-price" id="price-iguazu">$890 USD</div>
+            </div>
+            <div class="package-body">
+              <h3>Cataratas del Iguazú + BA</h3>
+              <p class="package-duration">⏱ <span id="days-display-iguazu">6</span> días / <span id="nights-display-iguazu">5</span> noches</p>
+              <div class="package-nights-control" style="margin: 12px 0; display: flex; align-items: center; gap: 10px;">
+                <label for="select-nights-iguazu" style="font-size: 14px; font-weight: 600;">Noches:</label>
+                <select id="select-nights-iguazu" class="nights-select" data-package="Cataratas del Iguazú + BA" data-base-price="890" data-base-nights="5" style="padding: 6px 12px; border-radius: 8px; border: 1px solid var(--color-outline-variant); background: var(--color-surface); color: var(--color-on-surface); font-size: 14px; cursor: pointer;">
+                  <option value="3">3 noches</option>
+                  <option value="5" selected>5 noches (Estándar)</option>
+                  <option value="7">7 noches</option>
+                  <option value="10">10 noches</option>
+                </select>
+              </div>
+              <p>Siente la fuerza de las Cataratas del Iguazú desde ambos lados (Argentina y Brasil), y finaliza tu aventura en la cosmopolita Buenos Aires.</p>
+              <ul class="package-includes">
+                <li>✈ Traslados aeropuertos y circuitos</li>
+                <li>🏨 Hoteles 3★ superior céntricos</li>
+                <li>🗺 Tour guiado Cataratas y City Tour</li>
+              </ul>
+              <a href="#contacto" class="btn-cta select-package-btn" data-pkg-name="Cataratas del Iguazú + BA">Reservar Paquete</a>
+            </div>
+          </article>
+
+          <article class="package-card" data-animate data-delay="3">
+            <div class="package-img-wrapper">
+              <img src="img/sitios/Colombia/Isla_Múcura/Isla Múcura.webp" alt="Paquete Joyas de Colombia" loading="lazy" width="400" height="260">
+              <span class="package-badge">🌟 Nuevo</span>
+              <div class="package-price" id="price-colombia">$650 USD</div>
+            </div>
+            <div class="package-body">
+              <h3>Joyas de Colombia</h3>
+              <p class="package-duration">⏱ <span id="days-display-colombia">5</span> días / <span id="nights-display-colombia">4</span> noches</p>
+              <div class="package-nights-control" style="margin: 12px 0; display: flex; align-items: center; gap: 10px;">
+                <label for="select-nights-colombia" style="font-size: 14px; font-weight: 600;">Noches:</label>
+                <select id="select-nights-colombia" class="nights-select" data-package="Joyas de Colombia" data-base-price="650" data-base-nights="4" style="padding: 6px 12px; border-radius: 8px; border: 1px solid var(--color-outline-variant); background: var(--color-surface); color: var(--color-on-surface); font-size: 14px; cursor: pointer;">
+                  <option value="3">3 noches</option>
+                  <option value="4" selected>4 noches (Estándar)</option>
+                  <option value="6">6 noches</option>
+                  <option value="8">8 noches</option>
+                </select>
+              </div>
+              <p>Sumérgete en el mar cristalino de Isla Múcura en el Caribe colombiano, recorre el Parque de los Nevados y termina en el Valle de Cocora.</p>
+              <ul class="package-includes">
+                <li>✈ Transporte interno especializado</li>
+                <li>🏨 Alojamiento eco-lodge con encanto</li>
+                <li>🗺 Snorkel, lanchas y senderismo guiado</li>
+              </ul>
+              <a href="#contacto" class="btn-cta select-package-btn" data-pkg-name="Joyas de Colombia">Reservar Paquete</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Galería y Mapa Interactivo AmCharts (#galeria) -->
+    <section id="galeria" class="galeria" data-animate>
+      <div class="container gallery-container">
+        <header class="section-header">
+          <span class="section-subtitle">Inspiración visual & mapa global</span>
+          <h2 class="section-title">Mapa Interactivo de Rutas</h2>
+          <p class="section-description">Explora el globo terráqueo interactivo. Haz clic en los países destacados para ver la información detallada.</p>
+        </header>
+
+        <div class="map-interactive-wrapper" data-animate>
+          <div id="chartdiv"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Reseñas de Clientes (#resenas) -->
+    <section id="resenas" class="resenas" data-animate>
+      <div class="container">
+        <header class="section-header">
+          <span class="section-subtitle">Testimonios reales</span>
+          <h2 class="section-title">Lo Que Dicen Nuestros Viajeros</h2>
+          <p class="section-description">La felicidad y satisfacción de quienes confían en nosotros es nuestro mayor orgullo.</p>
+        </header>
+
+        <!-- Stats Counter Bar -->
+        <aside class="stats-bar" aria-label="Estadísticas de la agencia">
+          <div class="stat-item">
+            <span class="stat-number" data-target="1250">0</span>
+            <span class="stat-label">Viajeros Felices</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="48">0</span>
+            <span class="stat-label">Destinos Mundiales</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="12">0</span>
+            <span class="stat-label">Años de Experiencia</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="99">0</span>
+            <span class="stat-label">% Satisfacción</span>
+          </div>
+        </aside>
+
+        <div class="reviews-grid">
+          <article class="review-card" data-animate data-delay="1">
+            <div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <blockquote class="review-text">"La experiencia en Isla Múcura fue un sueño hecho realidad. Aguas cristalinas, atardeceres mágicos y un servicio impecable por parte de Aventura Global. Definitivamente repetiré."</blockquote>
+            <footer class="review-author">
+              <div class="review-avatar" aria-hidden="true">M</div>
+              <div class="review-info">
+                <cite>María González</cite>
+                <p>Bogotá · Viajó a Isla Múcura</p>
+              </div>
+              <time datetime="2024-05">Mayo 2024</time>
+            </footer>
+          </article>
+
+          <article class="review-card" data-animate data-delay="2">
+            <div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <blockquote class="review-text">"Llegué a Machu Picchu y me quedé sin palabras. Todo el itinerario fue coordinado a la perfección: los hoteles, los guías, los traslados. Aventura Global superó todas mis expectativas."</blockquote>
+            <footer class="review-author">
+              <div class="review-avatar" aria-hidden="true">C</div>
+              <div class="review-info">
+                <cite>Carlos Mendoza</cite>
+                <p>Medellín · Viajó a Machu Picchu</p>
+              </div>
+              <time datetime="2024-04">Abril 2024</time>
+            </footer>
+          </article>
+
+          <article class="review-card" data-animate data-delay="3">
+            <div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <blockquote class="review-text">"Ver las cataratas desde ambos lados fue impresionante. La agencia nos dio toda la información necesaria y el seguro de viaje incluido nos dio total tranquilidad. ¡100% recomendado!"</blockquote>
+            <footer class="review-author">
+              <div class="review-avatar" aria-hidden="true">A</div>
+              <div class="review-info">
+                <cite>Ana Rodríguez</cite>
+                <p>CDMX · Viajó a Iguazú</p>
+              </div>
+              <time datetime="2024-03">Marzo 2024</time>
+            </footer>
+          </article>
+
+          <article class="review-card" data-animate data-delay="4">
+            <div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <blockquote class="review-text">"Nunca imaginé recorrer la Roma antigua con tanto detalle. El tour arqueológico a Ostia Antica fue el punto culminante del viaje. Aventura Global conoce los tesoros escondidos de Europa."</blockquote>
+            <footer class="review-author">
+              <div class="review-avatar" aria-hidden="true">J</div>
+              <div class="review-info">
+                <cite>Javier Torres</cite>
+                <p>Lima · Viajó a Ostia Antica</p>
+              </div>
+              <time datetime="2024-02">Febrero 2024</time>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Formulario de Contacto (#contacto) -->
+    <section id="contacto" class="contacto" data-animate>
+      <div class="container">
+        <header class="section-header">
+          <span class="section-subtitle">Empieza tu viaje</span>
+          <h2 class="section-title">Contáctanos Hoy Mismo</h2>
+          <p class="section-description">¿Listo para tu próxima aventura? Escríbenos y nuestros expertos planificarán el viaje perfecto para ti.</p>
+        </header>
+
+        <div class="contact-wrapper">
+          <!-- Contact Info Column -->
+          <address class="contact-info" data-animate data-delay="1">
+            <div>
+              <h3>Hablemos de tu Próximo Viaje</h3>
+              <p>Estamos disponibles para resolver todas tus dudas, personalizar paquetes y asegurarnos de que vivas unas vacaciones extraordinarias.</p>
+
+              <div class="contact-details">
+                <div class="contact-detail-item">
+                  <div class="contact-icon" aria-hidden="true">📍</div>
+                  <div>
+                    <h4>Oficina Principal</h4>
+                    <p>Av. de los Viajeros 1234, Ciudad Global</p>
+                  </div>
+                </div>
+
+                <div class="contact-detail-item">
+                  <div class="contact-icon" aria-hidden="true">📞</div>
+                  <div>
+                    <h4>Teléfono</h4>
+                    <p><a href="tel:+5551234567">+555 123 4567</a></p>
+                  </div>
+                </div>
+
+                <div class="contact-detail-item">
+                  <div class="contact-icon" aria-hidden="true">✉️</div>
+                  <div>
+                    <h4>Correo Electrónico</h4>
+                    <p><a href="mailto:contacto@aventuraglobal.com">contacto@aventuraglobal.com</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <a href="https://www.instagram.com/aventuraglobal" target="_blank" rel="noopener" class="contact-social-btn" aria-label="Instagram">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+              <a href="https://www.facebook.com/aventuraglobal" target="_blank" rel="noopener" class="contact-social-btn" aria-label="Facebook">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+              </a>
+              <a href="https://twitter.com/aventuraglobal" target="_blank" rel="noopener" class="contact-social-btn" aria-label="Twitter">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+              </a>
+            </div>
+          </address>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-container" data-animate data-delay="2">
+            <form id="contact-form" class="contact-form" novalidate>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nombre">Nombre completo *</label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Ej: María González" required minlength="3" maxlength="100" autocomplete="name">
+                  <span class="form-error" id="nombre-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Correo electrónico *</label>
+                  <input type="email" id="email" name="email" placeholder="tu@correo.com" required autocomplete="email">
+                  <span class="form-error" id="email-error"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="telefono">Teléfono (opcional)</label>
+                  <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000" autocomplete="tel">
+                </div>
+
+                <div class="form-group">
+                  <label for="destino">Destino de interés *</label>
+                  <select id="destino" name="destino" required>
+                    <option value="">Selecciona un destino...</option>
+                    <option value="machu_picchu">Machu Picchu, Perú</option>
+                    <option value="iguazu">Cataratas del Iguazú</option>
+                    <option value="isla_mucura">Isla Múcura, Colombia</option>
+                    <option value="cenote">Cenote Ik Kil, México</option>
+                    <option value="nevados">Parque de los Nevados</option>
+                    <option value="valle_cocora">Valle de Cocora, Colombia</option>
+                    <option value="salvador">Salvador de Bahía, Brasil</option>
+                    <option value="diocleciano">Palacio de Diocleciano, Croacia</option>
+                    <option value="ostia">Ostia Antica, Italia</option>
+                    <option value="santuario">Santuario de la Verdad, Tailandia</option>
+                    <option value="otro">Otro destino</option>
+                  </select>
+                  <span class="form-error" id="destino-error"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fecha">Fecha aproximada de viaje</label>
+                  <input type="date" id="fecha" name="fecha">
+                </div>
+
+                <div class="form-group">
+                  <label for="personas">Número de viajeros</label>
+                  <input type="number" id="personas" name="personas" min="1" max="50" value="2">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos sobre tu viaje soñado, presupuesto aproximado y requerimientos especiales..." required minlength="20" maxlength="1000"></textarea>
+                <span class="form-error" id="mensaje-error"></span>
+              </div>
+
+              <div class="form-group form-group--checkbox">
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <label for="terminos">Acepto la <a href="#" target="_blank">Política de Privacidad</a> y los <a href="#" target="_blank">Términos de Servicio</a></label>
+              </div>
+
+              <button type="submit" class="btn-primary btn-submit">
+                <span class="btn-text">Enviar Mensaje ✈</span>
+                <span class="btn-loading" hidden>Enviando mensaje...</span>
+              </button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-top" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); justify-content: space-between;">
+        <section class="footer-col">
+          <div class="footer-brand">
+            <img src="img/logo/screen.png" alt="Logo" width="36" height="36">
+            <span class="footer-brand-title">Aventura Global</span>
+          </div>
+          <p>Tu agencia de viajes de confianza para descubrir las maravillas más escondidas y fascinantes del planeta con total seguridad y confort.</p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/aventuraglobal" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Instagram">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/aventuraglobal" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Facebook">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+            </a>
+            <a href="https://twitter.com/aventuraglobal" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Twitter">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+            </a>
+          </div>
+        </section>
+
+        <section class="footer-col">
+          <h4>Legal & Privacidad</h4>
+          <ul class="footer-links">
+            <li><a href="#">Términos y Condiciones</a></li>
+            <li><a href="#">Política de Privacidad</a></li>
+            <li><a href="#">Política de Cookies</a></li>
+            <li><a href="#">Aviso Legal</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Aventura Global. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Widgets (Theme Toggle & Chatbot) -->
+  <aside class="floating-widgets" aria-label="Controles flotantes">
+    <button id="theme-toggle-floating" class="theme-float-btn" aria-label="Cambiar a modo oscuro" aria-pressed="false">
+      <span class="theme-icon" aria-hidden="true">☀️</span>
+    </button>
+
+    <div class="chatbot-widget" aria-label="Asistente virtual de Aventura Global">
+      <button id="chatbot-toggle" class="chatbot-toggle-btn" aria-label="Abrir asistente de viajes" aria-expanded="false">
+        💬
+      </button>
+      <div id="chatbot-container" class="chatbot-container">
+        <header class="chatbot-header">
+          <h4>Asistente Aventura Global ✈</h4>
+          <div style="display: flex; gap: 8px; align-items: center;">
+            <button id="chatbot-clear" class="chatbot-clear-btn" aria-label="Limpiar chat" title="Reiniciar conversación" style="background: transparent; border: none; color: white; cursor: pointer; font-size: 14px;">🗑️</button>
+            <button id="chatbot-close" class="chatbot-close" aria-label="Cerrar chat">&times;</button>
+          </div>
+        </header>
+        <div id="chatbot-messages" class="chatbot-messages">
+          <div class="chatbot-message bot">
+            ¡Hola! Soy tu asistente de viajes virtual de Aventura Global impulsado por IA. ¿A qué destino te gustaría viajar o qué paquete deseas consultar?
+          </div>
+        </div>
+        <div class="chatbot-input-area">
+          <input type="text" id="chatbot-input" placeholder="Escribe tu consulta de viaje..." aria-label="Escribe tu consulta de viaje">
+          <button id="chatbot-send" aria-label="Enviar mensaje">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- External JavaScript Modules -->
+  <script src="js/main.js" defer></script>
+  <script src="js/animaciones.js" defer></script>
+  <script src="js/mapa.js" defer></script>
+</body>
+</html>

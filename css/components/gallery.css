@@ -1,0 +1,69 @@
+/* ==========================================
+   COMPONENTS: GALLERY
+   ========================================== */
+
+.galeria {
+  background: var(--color-surface);
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.gallery-item {
+  position: relative;
+  height: 280px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+  background: var(--color-surface-container);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 20, 60, 0.9) 0%, rgba(0, 63, 135, 0.2) 60%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-overlay h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: white;
+}
+
+.gallery-overlay p {
+  font-size: 14px;
+  color: var(--color-on-primary-container);
+}

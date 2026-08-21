@@ -1,0 +1,139 @@
+/* ==========================================
+   BASE: CSS VARIABLES (Light & Dark Themes)
+   ========================================== */
+
+:root {
+  --color-primary: #003f87;
+  --color-primary-container: #0056b3;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #bbd0ff;
+
+  --color-secondary: #904d00;
+  --color-secondary-container: #fd8b00;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #603100;
+
+  --color-tertiary: #722b00;
+  --color-tertiary-container: #983c00;
+  --color-on-tertiary: #ffffff;
+
+  --color-surface: #f8f9ff;
+  --color-surface-dim: #cbdbf5;
+  --color-surface-bright: #f8f9ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff4ff;
+  --color-surface-container: #e5eeff;
+  --color-surface-container-high: #dce9ff;
+  --color-surface-container-highest: #d3e4fe;
+  --color-surface-variant: #d3e4fe;
+
+  --color-on-surface: #0b1c30;
+  --color-on-surface-variant: #424752;
+  --color-on-background: #0b1c30;
+  --color-background: #f8f9ff;
+  --color-inverse-surface: #213145;
+  --color-inverse-on-surface: #eaf1ff;
+
+  --color-outline: #727784;
+  --color-outline-variant: #c2c6d4;
+
+  --color-error: #ba1a1a;
+  --color-success: #2e7d32;
+
+  --shadow-card: 0px 8px 24px rgba(0, 63, 135, 0.08);
+  --shadow-hover: 0px 16px 40px rgba(0, 86, 179, 0.16);
+  --shadow-button: 0px 6px 20px rgba(253, 139, 0, 0.3);
+  --shadow-glow: 0 0 25px rgba(253, 139, 0, 0.4);
+
+  --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-theme="dark"] {
+  --color-primary: #4a90e2;
+  --color-primary-container: #1d5fc9;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #d6e4ff;
+
+  --color-secondary: #ffb703;
+  --color-secondary-container: #ff9f1c;
+  --color-on-secondary: #0b1c30;
+  --color-on-secondary-container: #ffe5cc;
+
+  --color-tertiary: #ff758c;
+  --color-tertiary-container: #c73e5c;
+  --color-on-tertiary: #ffffff;
+
+  --color-surface: #0f172a;
+  --color-surface-dim: #1e293b;
+  --color-surface-bright: #1e293b;
+  --color-surface-container-lowest: #111827;
+  --color-surface-container-low: #172033;
+  --color-surface-container: #1e293b;
+  --color-surface-container-high: #334155;
+  --color-surface-container-highest: #475569;
+  --color-surface-variant: #334155;
+
+  --color-on-surface: #f1f5f9;
+  --color-on-surface-variant: #cbd5e1;
+  --color-on-background: #f1f5f9;
+  --color-background: #0b0f19;
+  --color-inverse-surface: #f8f9ff;
+  --color-inverse-on-surface: #0b1c30;
+
+  --color-outline: #64748b;
+  --color-outline-variant: #334155;
+
+  --color-error: #ffb4ab;
+  --color-success: #81c784;
+
+  --shadow-card: 0px 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-hover: 0px 16px 40px rgba(0, 0, 0, 0.6);
+  --shadow-button: 0px 6px 20px rgba(255, 159, 28, 0.25);
+  --shadow-glow: 0 0 25px rgba(255, 159, 28, 0.35);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-primary: #4a90e2;
+    --color-primary-container: #1d5fc9;
+    --color-on-primary: #ffffff;
+    --color-on-primary-container: #d6e4ff;
+
+    --color-secondary: #ffb703;
+    --color-secondary-container: #ff9f1c;
+    --color-on-secondary: #0b1c30;
+    --color-on-secondary-container: #ffe5cc;
+
+    --color-tertiary: #ff758c;
+    --color-tertiary-container: #c73e5c;
+    --color-on-tertiary: #ffffff;
+
+    --color-surface: #0f172a;
+    --color-surface-dim: #1e293b;
+    --color-surface-bright: #1e293b;
+    --color-surface-container-lowest: #111827;
+    --color-surface-container-low: #172033;
+    --color-surface-container: #1e293b;
+    --color-surface-container-high: #334155;
+    --color-surface-container-highest: #475569;
+    --color-surface-variant: #334155;
+
+    --color-on-surface: #f1f5f9;
+    --color-on-surface-variant: #cbd5e1;
+    --color-on-background: #f1f5f9;
+    --color-background: #0b0f19;
+    --color-inverse-surface: #f8f9ff;
+    --color-inverse-on-surface: #0b1c30;
+
+    --color-outline: #64748b;
+    --color-outline-variant: #334155;
+
+    --color-error: #ffb4ab;
+    --color-success: #81c784;
+
+    --shadow-card: 0px 8px 24px rgba(0, 0, 0, 0.4);
+    --shadow-hover: 0px 16px 40px rgba(0, 0, 0, 0.6);
+    --shadow-button: 0px 6px 20px rgba(255, 159, 28, 0.25);
+    --shadow-glow: 0 0 25px rgba(255, 159, 28, 0.35);
+  }
+}

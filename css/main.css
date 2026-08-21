@@ -1,0 +1,31 @@
+/* ==========================================
+   AVENTURA GLOBAL - MAIN CSS ENTRY POINT
+   Modular Architecture System
+   ========================================== */
+
+/* 1. Base */
+@import url("./base/variables.css");
+@import url("./base/reset.css");
+@import url("./base/typography.css");
+
+/* 2. Layout */
+@import url("./layout/header.css");
+@import url("./layout/sections.css");
+@import url("./layout/footer.css");
+
+/* 3. Components */
+@import url("./components/buttons.css");
+@import url("./components/cards.css");
+@import url("./components/carousel.css");
+@import url("./components/gallery.css");
+@import url("./components/mapa.css");
+@import url("./components/reviews.css");
+@import url("./components/contact.css");
+@import url("./components/chatbot.css");
+@import url("./components/modals.css");
+
+/* 4. Pages */
+@import url("./pages/home.css");
+
+/* 5. Responsive */
+@import url("./responsive/responsive.css");

@@ -1,0 +1,230 @@
+/* ==========================================
+   COMPONENTS: CARDS (Destinations & Packages)
+   ========================================== */
+
+.destinos {
+  background: var(--color-surface);
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+.destination-card {
+  background: var(--color-surface-container-lowest);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: var(--transition-smooth);
+  border: 1px solid var(--color-surface-container);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.destination-card.hidden {
+  display: none !important;
+}
+
+.destination-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--color-secondary-container);
+}
+
+.destination-card figure {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.destination-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.destination-card:hover img {
+  transform: scale(1.06);
+}
+
+.destination-card .tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: rgba(0, 63, 135, 0.9);
+  backdrop-filter: blur(6px);
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  z-index: 2;
+}
+
+.destination-card .card-country {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background: rgba(0, 20, 60, 0.75);
+  backdrop-filter: blur(6px);
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+.card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-body h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.card-body p {
+  font-size: 15px;
+  color: var(--color-on-surface-variant);
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-surface-container);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card-meta span {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+/* Packages */
+.paquetes {
+  background: var(--color-surface-container-low);
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 32px;
+}
+
+.package-card {
+  background: var(--color-surface-container-lowest);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: var(--transition-smooth);
+  border: 1px solid var(--color-outline-variant);
+  display: flex;
+  flex-direction: column;
+}
+
+.package-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--color-secondary-container);
+}
+
+.package-img-wrapper {
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+}
+
+.package-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.package-card:hover .package-img-wrapper img {
+  transform: scale(1.06);
+}
+
+.package-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: var(--color-secondary-container);
+  color: var(--color-on-secondary);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 2;
+}
+
+.package-price {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background: var(--color-primary);
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.package-body {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.package-body h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.package-duration {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primary-container);
+  margin-bottom: 16px;
+}
+
+.package-body > p {
+  font-size: 15px;
+  color: var(--color-on-surface-variant);
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.package-includes {
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.package-includes li {
+  font-size: 14px;
+  color: var(--color-on-surface);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
